@@ -224,7 +224,7 @@ public class RatingDAO extends DAO {
 			}
 			try {
 		   //Chave da API	
-		   String API_KEY = "fcw9SPFluLvJXIjILM22l6fbcqpxKsi1";
+		   String API_KEY = "NULL";
 		   HttpRequest request = HttpRequest.newBuilder()
 		         .uri(URI.create("http://81023499-6db4-42b9-b0b0-5bafc8e2392e.brazilsouth.azurecontainer.io/score"))
 		         .headers("Content-Type", "application/json", "Authorization", "Bearer " + API_KEY)
