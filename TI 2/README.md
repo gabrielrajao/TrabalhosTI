@@ -5,6 +5,7 @@ Nosso projeto planeja ajudar aqueles que têm dificuldades com o cuidado de plan
 Atenção!!
 
 A proposta de sistema inteligente pode não estar funcionando por falta de fundos do MicrosoftAzure
+
 O identificador de imagens usado é o Plantnet API ("https://my.plantnet.org") é possível criar uma conta lá e substituir a key no código pela sua key, a key atualmente presente lá provavelmente não estará funcionando
 
 ## Alunos integrantes da equipe
