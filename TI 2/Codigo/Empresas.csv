@@ -1,0 +1,3 @@
+companyid,email,login,senha,salt
+1,folhaverde@gmail.com,FolhaVerde,$2a$10$9wMR9ybKK5RHPP4ogqyO1euj52sHgH78Rw8EG1wpYghP7a1gkyVP6,$2a$10$9wMR9ybKK5RHPP4ogqyO1e
+2,fertilizantesfelizes@gmail.com,FertilizantesOrg,$2a$10$GGpmoz0k3p.OsLd122R6neGOKhZsjVU9.MC9hvMieoaj3ImXMqh7O,$2a$10$GGpmoz0k3p.OsLd122R6ne

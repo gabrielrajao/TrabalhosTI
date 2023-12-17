@@ -1,0 +1,146 @@
+    /* Cadastro */
+
+    body {
+      margin: 0;
+    }
+
+    body * {
+      box-sizing: border-box;
+    }
+
+    .main-cadastro {
+      width: 100vw;
+      height: 100vh;
+      background-color: #201b2c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left-cadastro {
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .left-cadastro>h1 {
+      color: #77ffc0;
+    }
+
+    .left-cadastro-image {
+      width: 35vw;
+      border-radius: 60%;
+    }
+
+
+    .right-cadastro {
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-cadastro {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px 35px;
+      background-color: #16a085;
+      border-radius: 20px;
+      box-shadow: 0px 10px 40px black;
+    }
+
+    .card-cadastro>h1 {
+      color: #0f8;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .text-field {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 10px 0px;
+    }
+
+    .text-field>input {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      background: #514869;
+      color: #f0ffffde;
+      font-size: 12pt;
+      box-shadow: 0px 10px 40px #00000056;
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    .text-field>label {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .text-field a {
+      color: white;
+    }
+
+    .text-field>label::placeholder {
+      color: purple;
+    }
+
+    .btn-cadastro {
+      width: 100%;
+      padding: 16px 0px;
+      margin: 25px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: #2b132b;
+      background: #0f8;
+      cursor: pointer;
+      box-shadow: 0px 10px 40px -12px #00ff8052;
+    }
+
+
+
+    @media screen and (max-width: 950px) {
+      .main-cadastro {
+        flex-direction: column;
+      }
+
+      .left-cadastro>h1 {
+        display: none;
+      }
+
+      .left-cadastro {
+        width: 100%;
+        height: auto;
+      }
+
+
+      .right-cadastro {
+        width: 100%;
+        height: auto;
+        margin-top: 20%;
+      }
+
+      .left-cadastro-image {
+        width: 50vw;
+      }
+
+      .card-cadastro {
+        width: 90%;
+      }
+    }

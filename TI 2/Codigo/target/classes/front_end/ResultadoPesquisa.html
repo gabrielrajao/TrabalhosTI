@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plantas</title>
+    <link rel="stylesheet" href="ResultadoPesquisa.css">
+    <script src="./ResultadoPesquisa.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Fim bootstrap -->
+
+</head>
+
+<body onload="funcaoInicial();return false">
+
+
+    <header>
+        <div class="container-fluid mt-5">
+            <div class="row">
+
+                <!-- Logo -->
+                <div class="col-sm-2">
+                    <a href="index.html"><img src="imagens/logo.jpg" alt="" class="logo"></a>
+                </div>
+
+                <!-- Menu Buscar -->
+                <div class="col-sm-8">
+                    <form class="d-flex" role="search">
+                        <!-- Botão Dropdown-->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Todos
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="SuaConta.html">Sua conta</a></li>
+                                <li><a class="dropdown-item" href="Login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+
+                        <input class="form-control me-2" type="search" placeholder="Busque aqui a sua planta"
+                            aria-label="Search" id="search-item">
+                        <button class="btn btn-outline-success" type="submit"
+                            onclick="search();return false">Search</button>
+                    </form>
+                </div>
+                <!-- Fim menu buscar -->
+
+
+
+
+                <!-- Barra login -->
+                <div class="col-sm-2">
+                    <div class="btn-group show-on-hover">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><a
+                                href="login.html"> Contas e Listas </a><span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Fim Login -->
+
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Filtros -->
+
+        <!--<div class="container text-center">
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck3">Checkbox 4</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck3">Checkbox 5</label>
+
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck3">Checkbox 6</label>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+    -->
+
+        <!-- Texto Inicial -->
+        <div id="texto-inicial">
+            <h3>Use a barra de pesquisa para encontrar o que deseja</h3>
+        </div>
+
+        <!-- Resultados -->
+
+        <!-- Resultados Positivos -->
+
+        <div id="resultadoPosivito">
+            <div id="texto-resultado">
+                <p class="text-center fs-3">Resultados da sua busca:</p>
+            </div>
+
+            <div class="container text-center" id="product-list">
+
+                <div class="product">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="imagens/orquidea.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <div id="tituloCard1">
+                                        <h5 class="card-title text-decoration-underline">Orquídea Rosa</h5>
+                                    </div>
+                                    <div id="nomeCienCard1">
+                                    <p class="card-text fst-italic">nome científico</p></div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Praesent
+                                        justo
+                                        erat, semper sed sollicitudin vitae, suscipit sed diam. Nullam condimentum.Lorem
+                                        ipsum
+                                        dolor sit amet, consectetur adipiscing elit. Praesent justo erat, semper sed
+                                        sollicitudin vitae, suscipit sed diam. Nullam condimentum.</p>
+                                    <!--<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="imagens/orquideia-branca.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <div id="tituloCard2">
+                                        <h5 class="card-title text-decoration-underline">Orquídea Branca</h5>
+                                    </div>
+                                    <div id="nomeCienCard2">
+                                    <p class="card-text fst-italic">nome científico</p></div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Praesent
+                                        justo
+                                        erat, semper sed sollicitudin vitae, suscipit sed diam. Nullam condimentum.Lorem
+                                        ipsum
+                                        dolor sit amet, consectetur adipiscing elit. Praesent justo erat, semper sed
+                                        sollicitudin vitae, suscipit sed diam. Nullam condimentum.</p>
+                                    <!--<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="imagens/tulipa-branca.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <div id="tituloCard3">
+                                        <h5 class="card-title text-decoration-underline">Tulipa Branca</h5>
+                                    </div>
+                                    <div id="nomeCienCard3">
+                                    <p class="card-text fst-italic">nome científico</p></div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Praesent
+                                        justo
+                                        erat, semper sed sollicitudin vitae, suscipit sed diam. Nullam condimentum.Lorem
+                                        ipsum
+                                        dolor sit amet, consectetur adipiscing elit. Praesent justo erat, semper sed
+                                        sollicitudin vitae, suscipit sed diam. Nullam condimentum.</p>
+                                    <!--<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="imagens/tulipa-laranja.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <div id="tituloCard4">
+                                        <h5 class="card-title text-decoration-underline">Tulipa Laranja</h5>
+                                    </div>
+                                    <div id="nomeCienCard4">
+                                    <p class="card-text fst-italic">nome científico</p></div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Praesent
+                                        justo
+                                        erat, semper sed sollicitudin vitae, suscipit sed diam. Nullam condimentum.Lorem
+                                        ipsum
+                                        dolor sit amet, consectetur adipiscing elit. Praesent justo erat, semper sed
+                                        sollicitudin vitae, suscipit sed diam. Nullam condimentum.</p>
+                                    <!--<p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Resultados Negativos -->
+
+        <div id="resultadoNegativo">
+            <p class="text-center fs-3">Desculpe, não encontramos nada :(</p>
+            <p class="text-center fs-5">Para voltar para o menu incial aperte o botão abaixo</p>
+            <div class="d-grid col-1 mx-auto">
+                <a href="#" type="button" class="btn btn-outline-secondary md-6">Menu</a>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <footer>
+
+                    <div class="row row-cols-1 row-cols-md-4 pl-4 pt-4">
+                        <div class="payment text-center text-md-left">
+                            <h6><b>Payment Methods</b></h6>
+                            <i class="fa fa-brands fa-cc-visa text-md-center"></i>
+                            <i class="fa fa-brands fa-cc-mastercard text-md-center"></i>
+                            <i class="fa fa-brands fa-cc-paypal text-md-center"></i>
+                        </div>
+                        <div class="links text-center text-md-left">
+                            <h6><b>Quick Links</b></h6>
+                            <ul>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Shipping Policy</a></li>
+                                <li><a href="#">Cancelation & Returns</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="social text-center text-md-left">
+                            <h6><b>Let's be social</b></h6>
+                            <i class="fa fa-brands fa-facebook fa-2xl" style="color: #000"></i>&nbsp&nbsp&nbsp&nbsp<a
+                                href="#">@company</a>
+                            <br>
+                            <i class="fa fa-brands fa-instagram fa-2xl" style="color: #000"></i>&nbsp&nbsp&nbsp<a
+                                href="#">@company</a>
+                            <br>
+                            <i class="fa fa-brands fa-linkedin" style="color: #000"></i>&nbsp&nbsp&nbsp<a
+                                href="#">@company</a>
+                            <br>
+                            <i class="fa fa-brands fa-twitter" style="color: #000"></i>&nbsp&nbsp&nbsp<a
+                                href="#">@company</a>
+
+                        </div>
+                        <div class="contato text-center text-md-left">
+                            <h6><b>Contact us</b></h6>
+                            <div class="text1">
+                                <h6>Address line one</h6>
+                                <h6>Street No</h6>
+                                <h6>Place</h6>
+                            </div>
+                            <i class="fa fa-solid fa-envelope"></i> <a
+                                href="mailto:info@company.com">info@company.com</a>
+                            <br>
+                            <i class="fa fa-solid fa-phone"></i>
+                            <p><b>1800 4400 22</b></p>
+
+                        </div>
+
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </footer>
+
+
+
+
+</body>
+
+</html>

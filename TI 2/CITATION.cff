@@ -1,0 +1,33 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: GreenLeaf
+authors:
+  - family-names: Martins Rajão
+    given-names: Gabriel
+  - family-names: Dias Corteletti
+    given-names: Luiza
+  - family-names: Marchioni Alves dos Santos
+    given-names: Diego
+  - family-names: Valadares Souza
+    given-names: Daniel 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Cardoso Brandao
+    given-names: Wladmir 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: do Val Machado
+    given-names: Max
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Jerônimo de Almeida
+    given-names: Sandro
+keywords:
+  - plantas
+  - jardinagem
+  - sistema inteligente
+  - spark
+repository-code: https://github.com/ICEI-PUC-Minas-CC-TI/plmg-cc-2023-2-ti2-g02-cuidadodeplantas
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2023-12-12

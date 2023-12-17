@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CadastroPlantas.css">
+</head>
+
+<body>
+    <h1>Adicionar Planta</h1>
+
+
+    <div id="formContatos">
+        <div class="form-group row">
+            <div class="col-sm-6">
+                <label for="campoNome">Nome (*)</label>
+                <input type="text" class="form-control" id="campoNome">
+            </div>
+            <div class="col-sm-6">
+                <label for="campoNomecien">Nome Científico (*)</label>
+                <input type="text" class="form-control" id="campoNomecien">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <label for="campoNome">Tempo de Exposição a Luz (*)</label>
+                <input type="text" class="form-control" id="campoLuz">
+            </div>
+            <div class="col-sm-4">
+                <label for="campoNomecien">Intervalo de Rega (*)</label>
+                <input type="text" class="form-control" id="campoRega">
+            </div>
+            <div class="col-sm-4">
+                <label for="campoNome">Tipo de Solo (*)</label>
+                <input type="text" class="form-control" id="campoSolo">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <label for="campoNome">Descrição (*)</label>
+                <input type="text" class="form-control" id="campoDescri">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <small>(*) Campos obrigatórios</small>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <input type="button" class="btn btn-success" id="btnIncluirContato" value="Inserir">
+                <input type="button" class="btn btn-secondary" id="btnCarregaDados" value="Carrega Dados">
+
+                <a href="index.html"><input type="button" class="btn btn-primary" value="Voltar a Página Principal"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="tela">
+    
+    </div>
+
+
+
+
+
+    <script src="CadastroPlantas.js"></script>
+</body>
+
+</html>

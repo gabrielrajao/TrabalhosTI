@@ -1,0 +1,21 @@
+prodid,tipo,nome,funcao,preco,produrl,empresa
+1, Fertilizante,Fertilizante 1Kg,Para adubagem de jardins pequenos,20.3,http://fertilizantesfelizes.com/2903i90fn,2
+3, Fertilizante,Fertilizante 20Kg,Para adubagem de jardins medios,80.6,http://fertilizantesfelizes.com/5325325sf,2
+4, Fertilizante,Fertilizante 100Kg,Para adubagem de jardins grandes,200.5,http://fertilizantesfelizes.com/90uff0a9h092,2
+2, Fertilizante,Fertilizante 10Kg,Para adubagem de jardins pequenos,40.6,http://fertilizantesfelizes.com/5325290fs,2
+5, Fertilizante,Fertilizante 500kg,Para adubagem de fazendas pequenas,400.5,http://fertilizantesfelizes.com/f8ysa9fahy,2
+6, Fertilizante,Fertilizante 800kg,Para adubagem de fazendas pequenas,550.5,http://fertilizantesfelizes.com/u89ashf8a2,2
+7, Fertilizante,"Fertilizante 1,2 Ton",Para adubagem de fazendas medias,650.75,http://fertilizantesfelizes.com/as09fa03,2
+8, Fertilizante,"Fertilizante 1,6 Ton",Para adubagem de fazendas medias,780.75,http://fertilizantesfelizes.com/sahfa908,2
+9, Fertilizante,"Fertilizante 3,8 Ton",Para adubagem de fazendas grandes,3500.5,http://fertilizantesfelizes.com/agag34,2
+10, Fertilizante,"Fertilizante 4,0 Ton",Para adubagem de fazendas grandes,3870.5,http://fertilizantesfelizes.com/fasf09,2
+14, Aumento de Ph,Calcário calcinado 500g,Para aumentar o P.H. da terra ,100,https://folhaverde.com/saf24242,1
+12, Aumento de Ph,Cal virgem 400g,Para aumentar o P.H. da terra ,90,https://folhaverde.com/afgasd24242,1
+13, Aumento de Ph, Cal apagada 500g,Para aumentar o P.H. da terra ,100,https://folhaverde.com/fsafaf424,1
+15, Aumento de Ph,Cinzas 500g,Para aumentar o P.H. da terra ,50,https://folhaverde.com/sfasfasf24,1
+16, Dimniuição de Ph,Redutor de P.H. 1litro,Para diminuir o P.H. da terra,29.9,https://folhaverde.com/sfasfasf24,1
+11, Dimniuição de Ph,Sulfato de alumínio 500g,Para diminuir o P.H. da terra ,90,https://folhaverde.com/902uj40j,1
+17, Recipiente,Vaso Decorativo Branco,Vaso bonito 30x40,55,https://folhaverde.com/djh09h09234,1
+18, Recipiente,Vaso Decorativo Branco,Vaso bonito 60x80,110,https://folhaverde.com/fsafsaf9031,1
+19, Recipiente,Vaso Decorativo Preto,Vaso bonito 30x40,55,https://folhaverde.com/asg24242,1
+20, Recipiente,Vaso Decorativo Preto,Vaso bonito 60x80,110,https://folhaverde.com/fsaa2442fa,1

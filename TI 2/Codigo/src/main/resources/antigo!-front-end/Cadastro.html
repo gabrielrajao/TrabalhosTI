@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Cadastro.css">
+</head>
+
+<body>
+  <div class="main-cadastro">
+    <div class="left-cadastro">
+      <h1>Faça aqui seu cadastro</h1>
+      <a href="index.html"><img src="imagens/logo.jpg" alt="Logo" class="left-cadastro-image"></a>
+    </div>
+
+    <div class="right-cadastro">
+      <div class="card-cadastro">
+        <h1>Fazer Cadastro</h1>
+        <div class="text-field">
+          <label id="labelNome" for="name">Nome de Usuário</label>
+          <input id="campoNome" type="text" placeholder="entre com seu usuário">
+        </div>
+
+        <div class="text-field">
+          <label id="labelEmail" for="E-mail">E-mail</label>
+          <input id="campoEmail" type="text" placeholder="entre com seu E-mail">
+        </div>
+
+        <div class="text-field">
+          <label id="labelSenha" for="Password">Senha</label>
+          <input id="campoSenha" type="text" placeholder="Entre com sua senha">
+        </div>
+        <button id="btnCadastro" class="btn-cadastro">Cadastro</button>
+        <div id="tela"></div>
+      </div>
+    </div>
+  </div>
+  <script src="cadastro.js"></script>
+</body>
+
+</html>
